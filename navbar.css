@@ -7,8 +7,6 @@
     font-family:'Poppins',sans-serif;
 }
 
-/* WHOLE NAVBAR */
-
 .navbar-custom{
 
     width:420px;
@@ -22,12 +20,9 @@
     transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
 }
 
-/* Fade out class for navbar */
 .navbar-fade-out {
     opacity: 0 !important;
 }
-
-/* LEFT IMAGE PANEL */
 
 .menu-panel{
 
@@ -42,8 +37,6 @@
     position:relative;
 }
 
-/* LINKS */
-
 .menu-links{
 
     display:flex;
@@ -55,7 +48,6 @@
     margin-top:20px;
 
 }
-/* BUTTONS */
 
 .menu-item{
 
@@ -75,8 +67,6 @@
     transform:translateX(10px);
 
 }
-
-/* PAGE CONTENT FIX */
 
 body{
     margin-left:420px;

@@ -1,4 +1,4 @@
-// Page transition animation for Contacts.html
+
 window.addEventListener("DOMContentLoaded", function() {
     const wrapper = document.querySelector('.page-transition-wrapper');
     if (wrapper) {

@@ -7,7 +7,6 @@ fetch("navbar.html")
     const items = document.querySelectorAll(".menu-item");
     const navbar = document.querySelector(".navbar-custom");
 
-    // Animate navbar in on load
     if (navbar) {
         navbar.style.opacity = 0;
         setTimeout(() => {
@@ -26,7 +25,6 @@ fetch("navbar.html")
             item.style.color = color;
         });
 
-        // Animate out and change page on click
         item.addEventListener("click", function(e) {
             e.preventDefault();
             const wrapper = document.querySelector('.page-transition-wrapper');
@@ -40,7 +38,7 @@ fetch("navbar.html")
             }
             setTimeout(() => {
                 window.location.href = item.getAttribute("href");
-            }, 400); // match CSS transition duration
+            }, 400); 
         });
     });
 });

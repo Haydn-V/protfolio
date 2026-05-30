@@ -1,4 +1,4 @@
-// Page transition animation for About.html
+
 window.addEventListener("DOMContentLoaded", function() {
     const wrapper = document.querySelector('.page-transition-wrapper');
     if (wrapper) {
