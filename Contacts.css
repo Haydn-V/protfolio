@@ -1,0 +1,142 @@
+/* Page transition animation */
+.page-transition-wrapper {
+    opacity: 1;
+    transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.page-fade-out {
+    opacity: 0 !important;
+}
+body{
+    min-height:100vh;
+    background-image:url('./assests/Contacts.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+.contact-wrapper{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+
+.contact-card{
+    width:700px;
+    max-width:90%;
+    padding:40px;
+
+    background:rgba(10,10,35,0.75);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 0 20px rgba(140,0,255,.3),
+    0 0 50px rgba(140,0,255,.15);
+}
+
+/* Title */
+
+.contact-title{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.contact-subtitle{
+    color:#d6d6d6;
+    margin-bottom:35px;
+}
+
+/* Email Section */
+
+.contact-section{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    padding:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:15px;
+
+    margin-bottom:30px;
+}
+
+.contact-icon{
+    width:70px;
+    height:70px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2rem;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+.contact-link{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:1.1rem;
+}
+
+.contact-link:hover{
+    color:#61dafb;
+}
+
+/* Social Buttons */
+
+.social-section{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social-btn{
+    text-decoration:none;
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    font-size:1.1rem;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.social-btn i{
+    margin-right:10px;
+}
+
+.github{
+    background:#24292e;
+}
+
+.github:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.facebook{
+    background:#1877f2;
+}
+
+.facebook:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(24,119,242,.5);
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* WHOLE NAVBAR */
+
+.navbar-custom{
+
+    width:420px;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    display:flex;
+    opacity: 1;
+    transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Fade out class for navbar */
+.navbar-fade-out {
+    opacity: 0 !important;
+}
+
+/* LEFT IMAGE PANEL */
+
+.menu-panel{
+
+    width:420px;
+    height:100vh;
+
+    background:url("assests/yellow.png");
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+}
+
+/* LINKS */
+
+.menu-links{
+
+    display:flex;
+    flex-direction:column;
+
+    padding-left:10px;
+    padding-right:20px;
+
+    margin-top:20px;
+
+}
+/* BUTTONS */
+
+.menu-item{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:40px;
+
+    margin:22px 0;
+
+    font-weight:500;
+}
+
+.menu-item:hover{
+
+    transform:translateX(10px);
+
+}
+
+/* PAGE CONTENT FIX */
+
+body{
+    margin-left:420px;
+}
